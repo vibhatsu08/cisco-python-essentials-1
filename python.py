@@ -22,3 +22,6 @@ print(numbers)
 # a dummy variable is set to True, True means that a swap has taken place, and when it's set to False, it means that a swap hasn't taken place.
 # So the initial value is set to True, to get it in the while loop, and keep checking and swapping the numbers if a swap is possible.
 # Once the process is completed, the list of numbers is displayed.
+
+# the python method used to sort the list is:
+# numbers.sort()
