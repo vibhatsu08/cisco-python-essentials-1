@@ -1,30 +1,14 @@
-# python program to sort a list of numbers using the bubble sort technique
-# taking input for the list
-length = int(input("Enter the length of the list: "))
-numbers = []
-for i in range (length) :
-    number = int(input("Enter a random number: "))
-    numbers.append(number)
+# python program to print all the unique numbers in a given list
+numbers = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+unique_numbers = []
 
-# now sorting the list
-swapped = True
-while swapped :
-    swapped = False
-    for i in range (length-1) :
-        if (numbers[i] > numbers[i+1]) :
-            swapped = True
-            numbers[i], numbers[i+1] = numbers[i+1], numbers[i]
-            
-print(numbers)
+for number in numbers :
+    if number not in unique_numbers :
+        unique_numbers.append(number)
+        
+print(unique_numbers)
 
-# this is how the above program works
-# the input list is given.
-# a dummy variable is set to True, True means that a swap has taken place, and when it's set to False, it means that a swap hasn't taken place.
-# So the initial value is set to True, to get it in the while loop, and keep checking and swapping the numbers if a swap is possible.
-# Once the process is completed, the list of numbers is displayed.
-
-# the python method used to sort the list is:
-# numbers.sort()
-
-# the method to reverse a given list is:
-# numbers.reverse()
+# this is how the program works
+# the list is provided with the input numbers and duplicates
+# first step is to loop through the original list, and the later steps are to compare the value present in the unique list to the original list to check for any duplicates, and once that's done, the next step is to append the non repeating element in the unique list.
+# finally, print the output of the program.
