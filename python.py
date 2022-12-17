@@ -25,3 +25,6 @@ print(numbers)
 
 # the python method used to sort the list is:
 # numbers.sort()
+
+# the method to reverse a given list is:
+# numbers.reverse()
