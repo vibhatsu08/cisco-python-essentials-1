@@ -1,14 +1,10 @@
-# python program to print the fibonacci sequence of numbers.
-def printFibonacci (number) :
-    firstNum = 0
-    secondNum = 1
-    nextNum = 0
-    print(firstNum)
-    print(secondNum)
-    for i in range (number+1) :
-        nextNum = firstNum + secondNum
-        firstNum = secondNum
-        secondNum = nextNum
-        print(nextNum)
-        
-printFibonacci (10)
+# python program to print the fibonacci sequence of numbers using recursion.
+def printFibonacci(number) :
+    if (number <= 0) :
+        return 0
+    elif (number == 1) :
+        return 1
+    else :
+        return printFibonacci(number-1) + printFibonacci(number-2)
+
+print(printFibonacci(10))
