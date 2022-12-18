@@ -1,7 +1,8 @@
-# python program to calculate the BMI of a person based on their weight and height.
-# the function takes in two parameters, height and weight
-def calculateBMI (height, weight):
-    # returns the weight/height**2
-    return ((weight)/(height)**2)
-
-print(calculateBMI(1.72, 74))
+# python program to print the factorial of a given number.
+def printFactorial (number) :
+    product = 1
+    for digit in range (2, number+1):
+        product *= digit
+    return product
+    
+print (printFactorial(5))
