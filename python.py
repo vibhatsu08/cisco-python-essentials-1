@@ -1,8 +1,14 @@
-# python program to print the factorial of a given number.
-def printFactorial (number) :
-    product = 1
-    for digit in range (1, number+1):
-        product *= digit
-    return product
-    
-print (printFactorial(0))
+# python program to print the fibonacci sequence of numbers.
+def printFibonacci (number) :
+    firstNum = 0
+    secondNum = 1
+    nextNum = 0
+    print(firstNum)
+    print(secondNum)
+    for i in range (number+1) :
+        nextNum = firstNum + secondNum
+        firstNum = secondNum
+        secondNum = nextNum
+        print(nextNum)
+        
+printFibonacci (10)
